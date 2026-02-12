@@ -7,20 +7,20 @@ class Anvil < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Naoray/anvil/releases/download/v1.1.0/anvil-1.1.0-darwin_arm64.tar.gz"
-      sha256 "1ce740b3bde388d4dd020f4b64dfae8950cec2e67b89662d2de152524d02edf2"
+      sha256 "1d8390361d817e0d462ea97234cce3dcaecdd9fbad3806cb3a3bd6e263469640"
     else
       url "https://github.com/Naoray/anvil/releases/download/v1.1.0/anvil-1.1.0-darwin_amd64.tar.gz"
-      sha256 "0b6b357f5e85b7106e7281ff16e3b98a7ee6a5a1d936355fcbed7d31bcb8e71b"
+      sha256 "d184dded49f5c6a6a699129b1d8fcd6e6773021406b86b6479e077a5ce22ce0a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Naoray/anvil/releases/download/v1.1.0/anvil-1.1.0-linux_arm64.tar.gz"
-      sha256 "b6572e056c8f0d76ce5d38d9b3a824a1f37cb7037dec78ecd5e7543403b6d3d4"
+      sha256 "2365df5941e57ab0d149fcd955d257c6c56caf8ca717675488ab1f591762a6f1"
     else
       url "https://github.com/Naoray/anvil/releases/download/v1.1.0/anvil-1.1.0-linux_amd64.tar.gz"
-      sha256 "1ed9a4621839ac8f0140a65fa0276f3d5da2f12ce44851fcae7ea273f4a7b107"
+      sha256 "74479419f321d45e0aa87bd75ef3e660163b5ba05c7864c10ada66b78c1efeec"
     end
   end
 
