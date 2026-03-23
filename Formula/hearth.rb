@@ -1,16 +1,16 @@
 class Hearth < Formula
   desc "Unified Laravel development command center"
   homepage "https://github.com/Naoray/hearth"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Naoray/hearth/releases/download/v0.2.0/hearth-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "77c5fec4570b0a0b8bf8821c99b1c031fec458e437c75551425c6d6158bd683a"
+      url "https://github.com/Naoray/hearth/releases/download/v0.2.1/hearth-v0.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "52fd146672720737bc26667c093268baac1c55519a78c9e74539eddff35f7dc4"
     else
-      url "https://github.com/Naoray/hearth/releases/download/v0.2.0/hearth-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "a1b5e20d16af735c4626470f657b9a33cba7b7c73e36feff30e820b1bd49f419"
+      url "https://github.com/Naoray/hearth/releases/download/v0.2.1/hearth-v0.2.1-x86_64-apple-darwin.tar.gz"
+      sha256 "23878c26b5d32e53ab2232be19c991d93b50f290639516e11d234e23f5c96fc1"
     end
   end
 
