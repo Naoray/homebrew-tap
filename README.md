@@ -6,7 +6,6 @@ Homebrew formulas for [Naoray](https://github.com/Naoray) projects.
 
 ```bash
 brew tap naoray/tap
-brew install anvil
 ```
 
 ## Available Formulas
@@ -19,12 +18,24 @@ Git worktree manager for Laravel projects.
 brew install naoray/tap/anvil
 ```
 
-**Upgrade:**
+**Documentation:** [Anvil on GitHub](https://github.com/Naoray/anvil)
+
+### Scribe
+
+Team skill sync CLI for AI coding agents.
+
 ```bash
-brew upgrade anvil
+brew install naoray/tap/scribe
 ```
 
-**Documentation:** [Anvil on GitHub](https://github.com/Naoray/anvil)
+**Documentation:** [Scribe on GitHub](https://github.com/Naoray/scribe)
+
+## Upgrading
+
+```bash
+brew upgrade anvil
+brew upgrade scribe
+```
 
 ## About
 
