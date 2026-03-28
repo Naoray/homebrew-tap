@@ -20,6 +20,16 @@ brew install naoray/tap/anvil
 
 **Documentation:** [Anvil on GitHub](https://github.com/Naoray/anvil)
 
+### Hearth
+
+Unified Laravel development command center.
+
+```bash
+brew install naoray/tap/hearth
+```
+
+**Documentation:** [Hearth on GitHub](https://github.com/Naoray/hearth)
+
 ### Scribe
 
 Team skill sync CLI for AI coding agents.
@@ -34,6 +44,7 @@ brew install naoray/tap/scribe
 
 ```bash
 brew upgrade anvil
+brew upgrade hearth
 brew upgrade scribe
 ```
 
