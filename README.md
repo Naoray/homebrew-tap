@@ -10,44 +10,18 @@ brew tap naoray/tap
 
 ## Available Formulas
 
-### Anvil
-
-Git worktree manager for Laravel projects.
-
-```bash
-brew install naoray/tap/anvil
-```
-
-**Documentation:** [Anvil on GitHub](https://github.com/Naoray/anvil)
-
-### Hearth
-
-Unified Laravel development command center.
-
-```bash
-brew install naoray/tap/hearth
-```
-
-**Documentation:** [Hearth on GitHub](https://github.com/Naoray/hearth)
-
-### Scribe
-
-Team skill sync CLI for AI coding agents.
-
-```bash
-brew install naoray/tap/scribe
-```
-
-**Documentation:** [Scribe on GitHub](https://github.com/Naoray/scribe)
+| Formula | Description | Install |
+|---------|-------------|---------|
+| [Anvil](https://github.com/Naoray/anvil) | Git worktree manager for Laravel projects | `brew install naoray/tap/anvil` |
+| [Hearth](https://github.com/Naoray/hearth) | Unified Laravel development command center | `brew install naoray/tap/hearth` |
+| [Scribe](https://github.com/Naoray/scribe) | Team skill sync CLI for AI coding agents | `brew install naoray/tap/scribe` |
 
 ## Upgrading
 
 ```bash
-brew upgrade anvil
-brew upgrade hearth
-brew upgrade scribe
+brew upgrade naoray/tap/<formula>
 ```
 
 ## About
 
-Formulas are automatically updated when new releases are published.
+Formulas are automatically updated via [GoReleaser](https://goreleaser.com/) when new releases are published.
