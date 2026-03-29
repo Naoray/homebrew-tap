@@ -5,21 +5,21 @@
 class Scribe < Formula
   desc "Team skill sync CLI for AI coding agents"
   homepage "https://github.com/Naoray/scribe"
-  version "0.1.0-alpha.1"
+  version "0.2.0-alpha.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Naoray/scribe/releases/download/v0.1.0-alpha.1/scribe_darwin_amd64.tar.gz"
-      sha256 "3cb7e20f757b8a1b6e89f6b816e6f76022ec3b6a116372394df4515897f550bd"
+      url "https://github.com/Naoray/scribe/releases/download/v0.2.0-alpha.1/scribe_darwin_amd64.tar.gz"
+      sha256 "496bf1a2406244e27a451ac55757d5140e3af23ebbd19b3bb170336a07c865ef"
 
       define_method(:install) do
         bin.install "scribe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Naoray/scribe/releases/download/v0.1.0-alpha.1/scribe_darwin_arm64.tar.gz"
-      sha256 "255ad4b7601c1b9fbf2655b994bd6492520e45feb661ff8d355516211ccfd73e"
+      url "https://github.com/Naoray/scribe/releases/download/v0.2.0-alpha.1/scribe_darwin_arm64.tar.gz"
+      sha256 "1c9d169c1e57db603ecc1daa1c51f598376f517d5645b6cd4fed5657d4a7e4be"
 
       define_method(:install) do
         bin.install "scribe"
@@ -29,15 +29,15 @@ class Scribe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Naoray/scribe/releases/download/v0.1.0-alpha.1/scribe_linux_amd64.tar.gz"
-      sha256 "a9e580c91e7c12e92c189826747cd6de6f25e63da047da3adf404a0f96bd3a25"
+      url "https://github.com/Naoray/scribe/releases/download/v0.2.0-alpha.1/scribe_linux_amd64.tar.gz"
+      sha256 "f6c309ed4ffab5f668c8bba5c6bc42187b527411eb8f6f167d1e783f35687922"
       define_method(:install) do
         bin.install "scribe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Naoray/scribe/releases/download/v0.1.0-alpha.1/scribe_linux_arm64.tar.gz"
-      sha256 "8f54dedac0ce7d9070c2c44d98fac69560c0ca5fd91cdeb1c4e7e8e85efb9d61"
+      url "https://github.com/Naoray/scribe/releases/download/v0.2.0-alpha.1/scribe_linux_arm64.tar.gz"
+      sha256 "18256f1f7ce7b77d239142c4b63f2945c2cc9a88af3de171df251d1adfbb5eb9"
       define_method(:install) do
         bin.install "scribe"
       end
@@ -45,6 +45,6 @@ class Scribe < Formula
   end
 
   test do
-    system "#{bin}/scribe", "--help"
+    system "#{bin}/scribe", "--version"
   end
 end
