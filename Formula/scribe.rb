@@ -5,21 +5,21 @@
 class Scribe < Formula
   desc "Team skill sync CLI for AI coding agents"
   homepage "https://github.com/Naoray/scribe"
-  version "0.9.2-beta.1"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Naoray/scribe/releases/download/v0.9.2-beta.1/scribe_darwin_amd64.tar.gz"
-      sha256 "8bd56c93b1dec45c25fc4d857addd188f052047b3660d56208a8ed37b4c64bc4"
+      url "https://github.com/Naoray/scribe/releases/download/v1.0.0/scribe_darwin_amd64.tar.gz"
+      sha256 "21099b89d361c6c1e4812ee9d938a6cec3ab71e38a8cd1a5d6cd037ccede5647"
 
       define_method(:install) do
         bin.install "scribe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Naoray/scribe/releases/download/v0.9.2-beta.1/scribe_darwin_arm64.tar.gz"
-      sha256 "4a6df8c6e75f9a8ea2761e603c8d91d0ec8eea851487b65af1dc10ebab8fcf32"
+      url "https://github.com/Naoray/scribe/releases/download/v1.0.0/scribe_darwin_arm64.tar.gz"
+      sha256 "a144a8eb828b6f0e8da2b56e9fd39362a04fb4a1cb63cd4625941f95b51f5061"
 
       define_method(:install) do
         bin.install "scribe"
@@ -29,15 +29,15 @@ class Scribe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Naoray/scribe/releases/download/v0.9.2-beta.1/scribe_linux_amd64.tar.gz"
-      sha256 "1acbb766f1a15f6096412eb02f642ea904d668a4434c127ce3f7ef78d7b194ed"
+      url "https://github.com/Naoray/scribe/releases/download/v1.0.0/scribe_linux_amd64.tar.gz"
+      sha256 "d510d1547b0eb4faa1affafddfad9c2889caa7f7b18ee5c5df2f63d0e3e2d7e6"
       define_method(:install) do
         bin.install "scribe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Naoray/scribe/releases/download/v0.9.2-beta.1/scribe_linux_arm64.tar.gz"
-      sha256 "cc61ae1b4ed03c171388e61c414b4002e129e7378b3be33c550185b87f09589c"
+      url "https://github.com/Naoray/scribe/releases/download/v1.0.0/scribe_linux_arm64.tar.gz"
+      sha256 "aee647431a104da0b76eb2c5cb4dab3fad68de3e09615f0a31e3708ce2755861"
       define_method(:install) do
         bin.install "scribe"
       end
