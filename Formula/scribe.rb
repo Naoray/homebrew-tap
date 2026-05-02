@@ -5,21 +5,21 @@
 class Scribe < Formula
   desc "Team skill sync CLI for AI coding agents"
   homepage "https://github.com/Naoray/scribe"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Naoray/scribe/releases/download/v1.0.3/scribe_darwin_amd64.tar.gz"
-      sha256 "db573894e7335863d8b61568efda8108072efb4e90a25fe9232a2a3f8ce08b13"
+      url "https://github.com/Naoray/scribe/releases/download/v1.0.4/scribe_darwin_amd64.tar.gz"
+      sha256 "e0a31f7c600e15824bea6a444d1a36b42192040ab62278c6fb6486e613a89a04"
 
       define_method(:install) do
         bin.install "scribe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Naoray/scribe/releases/download/v1.0.3/scribe_darwin_arm64.tar.gz"
-      sha256 "2beb3c0b41618e0348b2c92e7693b285e4ce2a47d640c4a767958feb46d1ddfb"
+      url "https://github.com/Naoray/scribe/releases/download/v1.0.4/scribe_darwin_arm64.tar.gz"
+      sha256 "f03e8069b3cf6877d5cf905e98f45a4d8158983c0d98fc23dd14f5689431ee3a"
 
       define_method(:install) do
         bin.install "scribe"
@@ -29,15 +29,15 @@ class Scribe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Naoray/scribe/releases/download/v1.0.3/scribe_linux_amd64.tar.gz"
-      sha256 "21d545421c8d807a0251c7ed37a53d425e2d28d2293ef55b4514a267ed8f4b39"
+      url "https://github.com/Naoray/scribe/releases/download/v1.0.4/scribe_linux_amd64.tar.gz"
+      sha256 "e469eb8a15ad996af37cd82bae468ad67de8261572a75c46796c08ac0b8afcbe"
       define_method(:install) do
         bin.install "scribe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Naoray/scribe/releases/download/v1.0.3/scribe_linux_arm64.tar.gz"
-      sha256 "52c623e743672b757f1bb40767d6313e5fbdf2f55d90437167df548ba0037b9d"
+      url "https://github.com/Naoray/scribe/releases/download/v1.0.4/scribe_linux_arm64.tar.gz"
+      sha256 "6b978fe8b8b7f1f4e3c0f61aa4925997dcd6bc36b9f19288cac0ce550a5094d2"
       define_method(:install) do
         bin.install "scribe"
       end
