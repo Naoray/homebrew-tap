@@ -1,26 +1,26 @@
 class Anvil < Formula
   desc "Git worktree manager for Laravel projects"
   homepage "https://github.com/Naoray/anvil"
-  version "1.7.1"
+  version "1.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Naoray/anvil/releases/download/v1.7.1/anvil-1.7.1-darwin_arm64.tar.gz"
-      sha256 "3f890e13397fd9306c63af864a4ac95d74e4f31640bcf459c65c4e163d65fdf1"
+      url "https://github.com/Naoray/anvil/releases/download/v1.8.0/anvil-1.8.0-darwin_arm64.tar.gz"
+      sha256 "78624a531f127bf28976808cff3d58c1e3af8f7d4c701e939064231de48f1807"
     else
-      url "https://github.com/Naoray/anvil/releases/download/v1.7.1/anvil-1.7.1-darwin_amd64.tar.gz"
-      sha256 "e25330c9ec39c33f6194fd5af64959b4299adddd00847ca7024bd1419508c505"
+      url "https://github.com/Naoray/anvil/releases/download/v1.8.0/anvil-1.8.0-darwin_amd64.tar.gz"
+      sha256 "d15c0ef53e98b286d4fc9adeff29f0ae56a1188ab6ec47971a9d651e5963ba77"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Naoray/anvil/releases/download/v1.7.1/anvil-1.7.1-linux_arm64.tar.gz"
-      sha256 "7926d903e311b1e58d1867ad3cd15a4ea0060665aedb8364094c89030428bc92"
+      url "https://github.com/Naoray/anvil/releases/download/v1.8.0/anvil-1.8.0-linux_arm64.tar.gz"
+      sha256 "399ba455c05e0a231a6f45f92952f61caeda6c89de575aedb248a2162eb0de7b"
     else
-      url "https://github.com/Naoray/anvil/releases/download/v1.7.1/anvil-1.7.1-linux_amd64.tar.gz"
-      sha256 "737fc40d417d2d2bf9fac4d44defb01592b25a9fff46706e3e99b35578fbb8b3"
+      url "https://github.com/Naoray/anvil/releases/download/v1.8.0/anvil-1.8.0-linux_amd64.tar.gz"
+      sha256 "8e60d25322b2424a0f0120e40d815304fc8e486d6248a5fd8e975dd2605fb97d"
     end
   end
 
